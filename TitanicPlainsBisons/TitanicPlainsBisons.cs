@@ -36,6 +36,15 @@ namespace TitanicPlainsBisons
 
             DirectorAPI.MonsterActions += delegate (List<DirectorAPI.DirectorCardHolder> list, DirectorAPI.StageInfo stage)
             {
+                //Uncomment this to dump stage's spawns. Add extra variables to the thing if you want to find out what their values are.
+                /*foreach (DirectorAPI.DirectorCardHolder cardHolder in list)
+                {
+                    Debug.Log("\n" + cardHolder.Card.spawnCard
+                        + "\nselection weight: " + cardHolder.Card.selectionWeight
+                        + "\nspawnDistance: " + cardHolder.Card.spawnDistance
+                        + "\nmin stage completions: " + cardHolder.Card.minimumStageCompletions
+                        + "\nallow ambush spawn: " + cardHolder.Card.allowAmbushSpawn);
+                }*/
                 switch (stage.stage)
                 {
                     case DirectorAPI.Stage.TitanicPlains:
